@@ -1,5 +1,5 @@
 
-name: Publicar imagen en Docker Hub
+name: Publicar imagen y desplegar en Render
 
 on:
   push:
@@ -29,3 +29,6 @@ jobs:
           tags: |
             jatna/hola-mundo-devops:latest
             jatna/hola-mundo-devops:1.0
+
+      - name: Desplegar aplicacion en Render
+        run: curl -fsS -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
