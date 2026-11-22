@@ -27,5 +27,5 @@ jobs:
           context: .
           push: true
           tags: |
-            jatnamassiel/hola-mundo-devops:latest
-            jatnamassiel/hola-mundo-devops:1.0
+            jatna/hola-mundo-devops:latest
+            jatna/hola-mundo-devops:1.0
